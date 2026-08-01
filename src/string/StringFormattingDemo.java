@@ -11,7 +11,7 @@ public class StringFormattingDemo {
         String morning = "morning";
         String afternoon = "afternoon";
         String evening = "evening";
-        String formattedString = String.format(greetingsTemplate, firstName, morning);
+        String formattedString = String.format(greetingsTemplate, firstName, afternoon);
         System.out.println(formattedString);
 
         System.out.printf("You have %d computers available at store\n", 10);

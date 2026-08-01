@@ -9,5 +9,11 @@ public class OperationsWithIntegersAndDoubles {
         BigDecimal amountOfPeople = new BigDecimal(3).setScale(0, RoundingMode.HALF_DOWN);
         BigDecimal chargePerPerson = rideFee.divide(amountOfPeople, 2, RoundingMode.HALF_DOWN);
         System.out.println("Charge per person: " + chargePerPerson);
+
+        BigDecimal mypi  = new BigDecimal(Math.PI);
+
+        for (int i=1; i<6; i++ ) {
+            System.out.println(  mypi.setScale(i, RoundingMode.HALF_DOWN) );
+        }
     }
 }
